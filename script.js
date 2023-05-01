@@ -51,7 +51,11 @@ container.addEventListener('click', (e) => {
     }
     else if (title === 'Dragon Ball Super: Broly') {
         window.open(`https://www8.cuevana3.ch/17607/${title.toLowerCase().replace(/ /g, '-').replace(/:/g, '')}`);
-    }else{
+    }
+    else if (title === 'Dragon Ball Z Kai') {
+        window.open(`https://www3.animeflv.net/anime/${title.toLowerCase().replace(/ /g, '-').replace(/:/g, '').replace(/-z/g, '')}`);
+    }
+    else{
         window.open(`https://www3.animeflv.net/anime/${title.toLowerCase().replace(/ /g, '-').replace(/:/g, '')}`);
     }
 })
