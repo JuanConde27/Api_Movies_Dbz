@@ -8,16 +8,10 @@ const options = {
 	}
 };
 
-fetch('https://online-movie-database.p.rapidapi.com', options)
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-    })
-    .catch(err => console.error(err));
-
 fetch('https://online-movie-database.p.rapidapi.com/auto-complete?q=dragon%20ball', options)
 	.then(response => response.json())
 	.then(data => {
+        console.log(data);
         const arrayMovies = data.d;
         arrayMovies.map( (Element) => {
             const title = Element.l;
